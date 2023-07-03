@@ -1,6 +1,7 @@
 from app import app
+from flask import render_template
 
 @app.route("/")
 @app.route("/index")
 def index():
-    return "<h2>Initial Flask MVC Web Application</h2>"
+    return render_template("index.html")
